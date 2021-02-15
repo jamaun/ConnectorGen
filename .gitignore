@@ -1,6 +1,47 @@
+# build output
+.nyc_output
+out
+lib
+dist
+/**/lib
+/**/build
+/**/dist
+/**/test/output
+coverage
+full_stack_test_results
+integration_test_results
+imjs_extensions
+
+# Dependency directories
 node_modules/
-bower_components/
+**/node_modules
+package-lock.json
+
+# Optional eslint cache
+.eslintcache
+
+# Output of 'npm pack'
+*.tgz
+
+# dotenv environment variables file
+.env
+
+# trash
+*.bak
+*.orig
+.node-xmlhttprequest-sync*
+
+# misc
+.DS_Store
+integration-test-result.xml
+
+# Logs
 *.log
 
-build/
-dist/
+# rush specific
+common/temp/**
+.rush/temp/**
+/**/.rush
+package-deps.json
+*.build.log
+*.build.error.log
